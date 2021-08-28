@@ -1,0 +1,5 @@
+redirectUrl:
+spotify:
+  authorizationScopes:
+  clientId:
+  clientSecret:
