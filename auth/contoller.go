@@ -85,7 +85,7 @@ func GetSpotifyAccessToken(c *fiber.Ctx) error {
 	decoder := json.NewDecoder(resp.Body)
 	err := decoder.Decode(&respBody)
 	if err != nil {
-		logrus.Error("error decoding patload: %v, err")
+		logrus.Error("error decoding payload: %v, err")
 	}
 
 	return c.Status(http.StatusOK).JSON(respBody)
